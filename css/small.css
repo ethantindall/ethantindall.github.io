@@ -1,0 +1,64 @@
+@keyframes collapse {
+        from {height: 0px;}
+        to {height: 100px;}
+}
+
+body {
+    background-color: #080708;
+    color: white;
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+header {
+    text-align: center;
+    background-color: #EDD3C4;
+    font-family: 'Mohave', sans-serif;
+    color: #080708;
+    height: auto;
+    max-width: 100%;
+    padding: 25px 0 0 0;
+    margin: -25px 0 0 0;
+
+}
+header img {
+    margin:0 0 0px 0;
+    padding: 0;
+    max-width: 100%;
+}
+img {
+    max-width: 100%;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    color: white;
+    background-color: #080708;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid white;
+    text-align: left;
+    outline: none;
+  }
+.collapsible h3 {
+    font-family: 'Mohave', sans-serif;
+    padding: 0;
+    margin:0;
+  }
+.collapsible p {
+    margin: 0;
+    padding: 0;
+}
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: darkgray;
+    color: #080708;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
