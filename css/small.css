@@ -24,10 +24,18 @@ header {
 }
 
 
-h2 {
+h1,h2,h3,h4,h5,h6 {
   text-align: center;
   font-family: 'Mohave', sans-serif;
-
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
 }
 header img {
     margin:0 0 0px 0;
@@ -93,24 +101,61 @@ button {
   border: 1px solid white;
   margin: 10px;
 }
-ul {
+.skills {
+  margin: auto;
+}
+.skills ul {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0;
+  margin: 0 10% 0 10%;
 }
-ul li {
-  width: 25%;
+.skills ul li {
   text-align: center;
-  margin:5px;
-  padding: 3px;
+  margin: 0;
+  padding: 0;
 }
-ul li img {
+.skills ul li img {
   width: 40px;
 }
-ul li p {
+.skills ul li p {
   font-size: large;
   font-weight: 400;
   padding:0;
   margin:10px;
+}
+.education {
+  list-style-type: none;
+  text-align: center;
+  margin: 0px;
+  padding: 50px;
+}
+.education ul {
+  margin: 0;
+  padding: 0;
+}
+.education ul li { 
+  text-align: left;
+  font-size: 1em;
+  font-weight: 400;
+  padding:0;
+  margin:10px;
+}
+.education img {
+  width: 30%;
+  margin: auto;
+}
 
+.other_skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+.other_skills ul li {
+  text-align: center;
+  font-size: 1em;
+  font-weight: 400;
+  padding:0;
+  margin:10px;
 }
