@@ -9,16 +9,24 @@ body {
     margin:0;
     padding: 0;
     width: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 header {
     text-align: center;
     background-color: #EDD3C4;
     font-family: 'Mohave', sans-serif;
-    color: #080708;
+    font-size: large;
+    color: black;
     height: auto;
     max-width: 100%;
     padding: 25px 0 0 0;
     margin: -25px 0 0 0;
+}
+
+
+h2 {
+  text-align: center;
+  font-family: 'Mohave', sans-serif;
 
 }
 header img {
@@ -32,7 +40,7 @@ img {
 
 .collapsible {
     color: white;
-    background-color: #080708;
+    background-color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -41,13 +49,11 @@ img {
   }
 .collapsible h3 {
     font-family: 'Mohave', sans-serif;
+    font-size: large;
     padding: 0;
     margin:0;
   }
-.collapsible p {
-    margin: 0;
-    padding: 0;
-}
+
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
       background-color: black;
@@ -77,9 +83,34 @@ img {
 .collapsible_row1 {
   display: flex; flex-direction: row;
 }
+.collapsible_row1 h3  {
+  margin-top: 2px;
+}
 button {
   border: none;
 }
 .project {
   border: 1px solid white;
+  margin: 10px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li {
+  width: 25%;
+  text-align: center;
+  margin:5px;
+  padding: 3px;
+}
+ul li img {
+  width: 40px;
+}
+ul li p {
+  font-size: large;
+  font-weight: 400;
+  padding:0;
+  margin:10px;
+
 }
