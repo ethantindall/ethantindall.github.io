@@ -29,14 +29,13 @@ header img {
 img {
     max-width: 100%;
 }
-/* Style the button that is used to open and close the collapsible content */
+
 .collapsible {
     color: white;
     background-color: #080708;
     cursor: pointer;
     padding: 18px;
     width: 100%;
-    border: 1px solid white;
     text-align: left;
     outline: none;
   }
@@ -51,8 +50,20 @@ img {
 }
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
-    background-color: darkgray;
-    color: #080708;
+      background-color: black;
+  }
+.material-symbols-outlined {
+  padding:0;
+  margin: auto 15px auto 0px;
+}
+
+  .material-symbols-outlined:after {
+    content:'add';
+  }
+  .active span:after {
+    content: "close"; /* Unicode character for "minus" sign (-) */
+    margin-top: -15px;
+    color:white;
   }
   
   /* Style the collapsible content. Note: hidden by default */
@@ -62,3 +73,13 @@ img {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+  /*Make the plus/minus sign in the button float to the left*/
+.collapsible_row1 {
+  display: flex; flex-direction: row;
+}
+button {
+  border: none;
+}
+.project {
+  border: 1px solid white;
+}
