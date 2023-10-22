@@ -122,6 +122,12 @@ button {
   margin: 0px;
   padding-right: 20px;
 }
+#edu_title {
+  margin-top: 155px;
+}
+#proj_title {
+  margin-top: 50px;
+}
 .education h3 {
   text-align: left;
   margin: 10px 0 10px 0px;
@@ -130,6 +136,10 @@ button {
   grid-column: 1/2;
   max-width: 70%;
   justify-self: center;
+  padding-top: 15px;
+}
+#dliimg {
+  padding: 0;
 }
 .education ul {
   margin: 0;
@@ -138,13 +148,11 @@ button {
 }
 .education ul li { 
   text-align: left;
-  font-size: 1em;
+  font-size: .8em;
   font-weight: 400;
-  margin-top: 5px;
+  margin-top: 10px;
 }
-.education ul li::before {
-  content: "- ";
-}
+
 .edu_column_2 {
   grid-column: 2/3;
   border-left: 1px solid white;
