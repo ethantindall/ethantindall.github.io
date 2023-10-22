@@ -92,9 +92,7 @@ button {
   border: 1px solid white;
   margin: 10px;
 }
-.skills {
-  margin: auto;
-}
+
 .skills ul {
   list-style-type: none;
   display: grid;
