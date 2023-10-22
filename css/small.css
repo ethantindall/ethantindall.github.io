@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #080708;
+    background-color: #212738;
     color: white;
     margin:0;
     padding: 0;
@@ -13,16 +13,13 @@ body {
 }
 header {
     text-align: center;
-    background-color: #EDD3C4;
     font-family: 'Mohave', sans-serif;
-    font-size: large;
-    color: black;
-    height: auto;
-    max-width: 100%;
-    padding: 25px 0 0 0;
-    margin: -25px 0 0 0;
+    padding: 0 10px 0 10px
 }
-
+header img {
+  border-radius: 50%;
+  max-width: 80%;
+}
 
 h1,h2,h3,h4,h5,h6 {
   text-align: center;
@@ -37,18 +34,12 @@ h2 {
 h3 {
   font-size: 1.5em;
 }
-header img {
-    margin:0 0 0px 0;
-    padding: 0;
-    max-width: 100%;
-}
 img {
     max-width: 100%;
 }
 
 .collapsible {
     color: white;
-    background-color: black;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -56,15 +47,13 @@ img {
     outline: none;
   }
 .collapsible h3 {
-    font-family: 'Mohave', sans-serif;
-    font-size: large;
     padding: 0;
     margin:0;
   }
 
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
-      background-color: black;
+      background-color: #212738;
   }
 .material-symbols-outlined {
   padding:0;
@@ -96,6 +85,8 @@ img {
 }
 button {
   border: none;
+  background-color: #212738;
+
 }
 .project {
   border: 1px solid white;
@@ -107,47 +98,63 @@ button {
 .skills ul {
   list-style-type: none;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 33% 34% 33%;
+  grid-template-rows: 33% 34% 33%;
   padding: 0;
   margin: 0 10% 0 10%;
 }
 .skills ul li {
   text-align: center;
-  margin: 0;
-  padding: 0;
+
 }
 .skills ul li img {
-  width: 40px;
+  max-height: 40px;
 }
 .skills ul li p {
   font-size: large;
   font-weight: 400;
   padding:0;
-  margin:10px;
+  margin:12px;
 }
 .education {
-  list-style-type: none;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 33% 67%;
   margin: 0px;
-  padding: 50px;
+  padding-right: 20px;
+}
+.education h3 {
+  text-align: left;
+  margin: 10px 0 10px 0px;
+}
+.education img {
+  grid-column: 1/2;
+  max-width: 70%;
+  justify-self: center;
 }
 .education ul {
   margin: 0;
-  padding: 0;
+  padding: 0 0 30px 0;
+  list-style-type: none;
 }
 .education ul li { 
   text-align: left;
   font-size: 1em;
   font-weight: 400;
-  padding:0;
-  margin:10px;
+  margin-top: 5px;
 }
-.education img {
-  width: 30%;
-  margin: auto;
+.education ul li::before {
+  content: "- ";
 }
+.edu_column_2 {
+  grid-column: 2/3;
+  border-left: 1px solid white;
+  padding-left: 15px;
 
+}
+.other_skills {
+  margin: 150px 0 0 0;
+  padding: 0;
+}
 .other_skills ul {
   list-style-type: none;
   padding: 0;
