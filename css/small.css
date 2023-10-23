@@ -9,8 +9,9 @@ body {
     margin:0;
     padding: 0;
     width: 100%;
-    font-family: 'Roboto', sans-serif;
-}
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+  }
 header {
     text-align: center;
     font-family: 'Mohave', sans-serif;
@@ -125,15 +126,18 @@ button {
 #proj_title {
   margin-top: 50px;
 }
+.education {
+  padding-right: 10px;
+}
 .education h3 {
   text-align: left;
   margin: 10px 0 10px 0px;
 }
 .education img {
   grid-column: 1/2;
-  max-width: 70%;
+  max-width: 60%;
   justify-self: center;
-  padding-top: 15px;
+  padding-top: 5px;
 }
 #dliimg {
   padding: 0;
