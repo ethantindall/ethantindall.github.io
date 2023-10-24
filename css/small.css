@@ -66,17 +66,20 @@ img {
   }
   .active span:after {
     content: "close"; /* Unicode character for "minus" sign (-) */
-    margin-top: -15px;
     color:white;
   }
   
   /* Style the collapsible content. Note: hidden by default */
-  .content {
-    padding: 0 18px;
+  .project_content {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
+  .project_content p {
+    padding: 0 18px;
+  }
+
+  
   /*Make the plus/minus sign in the button float to the left*/
 .collapsible_row1 {
   display: flex; flex-direction: row;
@@ -93,6 +96,24 @@ button {
   border: 1px solid white;
   margin: 10px;
 }
+.project a {
+  color: white;
+  font-size: 1.3em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+.project a::after {
+  content: " >";
+}
+.project img {
+  padding: 0;
+  margin: 0;
+}
+.bottom_row a {
+  text-decoration: none;
+}
+
+
 
 .skills ul {
   list-style-type: none;
