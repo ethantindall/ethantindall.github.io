@@ -183,7 +183,7 @@ button {
 
 }
 .other_skills {
-  margin: 150px 0 0 0;
+  margin: 50px 0 0 0;
   padding: 0;
 }
 .other_skills ul {
@@ -196,4 +196,8 @@ button {
   font-weight: 400;
   padding:0;
   margin:10px;
+}
+footer {
+  margin: 50px 30px 30px 30px;
+  text-align: center;
 }
